@@ -1,0 +1,41 @@
+
+.card:hover, .card-2:hover {
+  transform: rotate(0);
+  animation: resetAnimacao 1s ease-in-out 1;
+    pointer-events: none; /* Desativa a interação */
+
+    pointer-events: auto;  /* Reativa a interação após a animação */
+ 
+}
+  
+  .card:active, .card-2:active {
+    transform: translateY(-20px) rotate(-3deg);
+    scale: 0.95;
+  
+   
+  }
+
+  @keyframes resetAnimacao {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+  
+@keyframes typing {
+  
+  
+  from { width: 0;
+   }
+}
+
+
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+ 
+    
+  }
+
